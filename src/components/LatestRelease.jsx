@@ -1,5 +1,5 @@
 import { Row, Col, Container, Button } from 'react-bootstrap'
-import { Component } from 'react'
+import React, { Component } from 'react'
 import MyCard from './MyCard'
 import Fantasy from '../data/fantasy.json'
 import History from '../data/history.json'

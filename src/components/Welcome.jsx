@@ -1,5 +1,6 @@
 import { Row, Col, Container, Jumbotron } from 'react-bootstrap'
 import Book from '../book-svgrepo-com.svg'
+import React from 'react'
 
 const Welcome = () => (
     <Container>

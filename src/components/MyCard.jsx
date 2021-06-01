@@ -1,4 +1,5 @@
 import { Col, Card, Badge } from 'react-bootstrap'
+import React from 'react'
 
 const MyCard = (props) => (
     <Col xs={3} key={props.i}>

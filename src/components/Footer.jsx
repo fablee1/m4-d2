@@ -1,4 +1,5 @@
 import { Row, Col, Container } from 'react-bootstrap'
+import React from 'react'
 
 const Footer = () => (
     <footer className="py-5">

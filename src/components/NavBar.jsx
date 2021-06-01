@@ -1,4 +1,5 @@
 import { Navbar, Nav, Container } from 'react-bootstrap'
+import React from 'react'
 
 const NavBar = () => (
     <Navbar bg="dark" variant="dark" className="mb-4">
