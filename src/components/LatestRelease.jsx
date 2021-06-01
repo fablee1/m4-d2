@@ -29,17 +29,17 @@ class LatestRelease extends Component {
                         })
                     }
                 </Row>
-                <Row className="mb-4 w-100">
+                <Row className="mb-4">
                     <Col>
-                        <Row>
+                        <Row className="w-100 justify-content-center mb-4">
                         {
                             this.state.selectedCatName ? <h2>{this.state.selectedCatName}</h2> : <h2>Select A Category To View Books!</h2>
                         }
                         </Row>
-                        <Row>
+                        <Row className="d-flex justify-content-center">
                         {   
-                            this.state.selectedCategory ? this.state.selectedCategory.map(c => (
-                                <MyCard {...c} />
+                            this.state.selectedCategory ? this.state.selectedCategory.map((c, i) => (
+                                <MyCard {...c} key={i} />
                             )) : null
                         }
                         </Row>

@@ -1,7 +1,7 @@
 import { Col, Card, Badge } from 'react-bootstrap'
 
 const MyCard = (props) => (
-    <Col xs={3}>
+    <Col xs={3} key={props.i}>
         <Card>
             <Card.Img variant="top" src={props.img} />
             <Card.Body>
