@@ -20,10 +20,10 @@ class LatestRelease extends Component {
     render() {
         return (
             <Container>
-                <Row className="mb-5">
+                <Row className="mb-5 d-flex justify-content-center">
                     {
                         Object.keys(this.categories).map((cat, i) => {   
-                        return <Col key={i} className="d-flex justify-content-center px-4">
+                        return <Col key={i} xs={6} sm={4} md={2} className="d-flex justify-content-center px-4 mb-2">
                                     <Button variant="success" className="w-100" onClick={() => this.setState({selectedCategory: this.categories[cat], selectedCatName: cat})}>{cat}</Button>
                                 </Col>
                         })
@@ -31,7 +31,7 @@ class LatestRelease extends Component {
                 </Row>
                 <Row className="mb-4">
                     <Col>
-                        <Row className="w-100 justify-content-center mb-4">
+                        <Row className="d-flex justify-content-center mb-4 text-center">
                         {
                             this.state.selectedCatName ? <h2>{this.state.selectedCatName}</h2> : <h2>Select A Category To View Books!</h2>
                         }
